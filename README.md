@@ -1,4 +1,4 @@
-# house-core-dashboard
+# vue-dashboard-hc
 
 ## Project setup
 ```
