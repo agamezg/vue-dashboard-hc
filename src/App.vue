@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WaterTank percentage=56 identifier="Rudy's"></WaterTank>
+    <WaterTank percentage=82 identifier="Raquel's"></WaterTank>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WaterTank from "@/components/WaterTank";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WaterTank
   }
 }
 </script>
@@ -19,10 +19,19 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: large;
+  color: white;
+}
+
+h2 {
+  font-size: medium;
+  color: #2c3e50;
 }
 </style>
